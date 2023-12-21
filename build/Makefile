@@ -87,7 +87,7 @@ rebuild_cache/fast: rebuild_cache
 
 # Special rule for the target list_install_components
 list_install_components:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Only default component available"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Available install components are: \"Unspecified\""
 .PHONY : list_install_components
 
 # Special rule for the target list_install_components
@@ -184,32 +184,47 @@ uninstall: cmake_check_build_system
 
 # fast build rule for target.
 uninstall/fast:
-	$(MAKE) $(MAKESILENT) -f external/glm/CMakeFiles/uninstall.dir/build.make external/glm/CMakeFiles/uninstall.dir/build
+	$(MAKE) $(MAKESILENT) -f external/glfw/CMakeFiles/uninstall.dir/build.make external/glfw/CMakeFiles/uninstall.dir/build
 .PHONY : uninstall/fast
 
-external/glad/glad.o: external/glad/glad.c.o
-.PHONY : external/glad/glad.o
+#=============================================================================
+# Target rules for targets named glfw
 
-# target to build an object file
-external/glad/glad.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/external/glad/glad.c.o
-.PHONY : external/glad/glad.c.o
+# Build rule for target.
+glfw: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glfw
+.PHONY : glfw
 
-external/glad/glad.i: external/glad/glad.c.i
-.PHONY : external/glad/glad.i
+# fast build rule for target.
+glfw/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/glfw.dir/build.make external/glfw/src/CMakeFiles/glfw.dir/build
+.PHONY : glfw/fast
 
-# target to preprocess a source file
-external/glad/glad.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/external/glad/glad.c.i
-.PHONY : external/glad/glad.c.i
+#=============================================================================
+# Target rules for targets named update_mappings
 
-external/glad/glad.s: external/glad/glad.c.s
-.PHONY : external/glad/glad.s
+# Build rule for target.
+update_mappings: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 update_mappings
+.PHONY : update_mappings
 
-# target to generate assembly for a file
-external/glad/glad.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/main.dir/build.make CMakeFiles/main.dir/external/glad/glad.c.s
-.PHONY : external/glad/glad.c.s
+# fast build rule for target.
+update_mappings/fast:
+	$(MAKE) $(MAKESILENT) -f external/glfw/src/CMakeFiles/update_mappings.dir/build.make external/glfw/src/CMakeFiles/update_mappings.dir/build
+.PHONY : update_mappings/fast
+
+#=============================================================================
+# Target rules for targets named glad
+
+# Build rule for target.
+glad: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 glad
+.PHONY : glad
+
+# fast build rule for target.
+glad/fast:
+	$(MAKE) $(MAKESILENT) -f external/glad/CMakeFiles/glad.dir/build.make external/glad/CMakeFiles/glad.dir/build
+.PHONY : glad/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
@@ -248,10 +263,10 @@ help:
 	@echo "... list_install_components"
 	@echo "... rebuild_cache"
 	@echo "... uninstall"
+	@echo "... update_mappings"
+	@echo "... glad"
+	@echo "... glfw"
 	@echo "... main"
-	@echo "... external/glad/glad.o"
-	@echo "... external/glad/glad.i"
-	@echo "... external/glad/glad.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

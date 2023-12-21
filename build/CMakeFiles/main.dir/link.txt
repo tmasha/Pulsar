@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/main.dir/main.cpp.o CMakeFiles/main.dir/external/glad/glad.c.o -o main  /usr/local/lib/libglfw3.a /usr/lib/x86_64-linux-gnu/libOpenGL.so /usr/lib/x86_64-linux-gnu/libGLX.so /usr/lib/x86_64-linux-gnu/librt.a -lm -ldl 
+/usr/bin/c++ -rdynamic CMakeFiles/main.dir/main.cpp.o -o main  external/glfw/src/libglfw3.a external/glad/libglad.a -lGL -Wl,-Bstatic -lrt -Wl,-Bdynamic -lm -ldl 
