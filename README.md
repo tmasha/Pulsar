@@ -1,2 +1,2 @@
-# pulsar
-space engine
+# 🚀 Pulsar 💫
+- An OpenGL space simulation
