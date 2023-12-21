@@ -1,14 +1,21 @@
 cmake_minimum_required(VERSION 3.12)
 project(Pulsar)
 
-set(GLFW_INCLUDE_DIR external/glfw/include)
-set(GLAD_INCLUDE_DIR external/glad/include)
+set(GLFW_DIR external/glfw)
+set(GLM_DIR external/glm)
+set(GLAD_DIR external/glad)
 
 find_package(OpenGL REQUIRED)
 find_package(glfw3 REQUIRED)
 
-include_directories(${GLFW_INCLUDE_DIR} ${GLAD_INCLUDE_DIR})
+add_subdirectory(${GLM_DIR})
 
-add_executable(Pulsar main.cpp external/glad/src/glad.c)
+include_directories(
+    ${GLFW_DIR}/include
+    ${GLM_DIR}
+    ${GLAD_DIR}
+)
 
-target_link_libraries(Pulsar PRIVATE glfw OpenGL::GL)
+add_executable(main main.cpp ${GLAD_DIR}/glad.c)
+
+target_link_libraries(main PRIVATE glfw ${OPENGL_LIBRARY})
