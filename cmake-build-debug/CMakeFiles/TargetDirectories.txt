@@ -1,0 +1,10 @@
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/CMakeFiles/main.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glfw/CMakeFiles/edit_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glfw/CMakeFiles/rebuild_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glad/CMakeFiles/glad.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glad/CMakeFiles/edit_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glad/CMakeFiles/rebuild_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glm/CMakeFiles/edit_cache.dir
+C:/Users/plut0/OneDrive/Documents/GitHub/pulsar/cmake-build-debug/external/glm/CMakeFiles/rebuild_cache.dir
