@@ -1,7 +1,7 @@
-# 🚀 Pulsar
+# 🌟 pulsar
 - An OpenGL space simulation
 
-## 💫 How to build the project (assuming you have C++ set up)
+## 🚀 How to build the project (assuming you have C++ set up)
 ### 🪟 Windows
 - Install [Visual Studio](https://visualstudio.microsoft.com/)
 - Within Visual Studio, install Desktop development with C++
