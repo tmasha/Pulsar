@@ -5,16 +5,16 @@ option(GLFW_BUILD_TESTS OFF)
 cmake_minimum_required(VERSION 2.6)
 project(Pulsar)
 
-add_subdirectory(external/glfw)
-add_subdirectory(external/glad)
-add_subdirectory(external/glm)
+add_subdirectory(include/glfw)
+add_subdirectory(include/glad)
+add_subdirectory(include/glm)
 
 find_package(OpenGL REQUIRED)
 
 include_directories(
-  external/glfw/include
-  external/glad/include
-  external/glm
+  include/glfw/include
+  include/glad/include
+  include/glm
 )
 
 if(COMMAND cmake_policy)
