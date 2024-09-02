@@ -1,4 +1,4 @@
-# 🌟 pulsar
+# 💫 Pulsar
 - An OpenGL space simulation
 
 ## 🚀 How to build the project (assuming you have C++ set up)
